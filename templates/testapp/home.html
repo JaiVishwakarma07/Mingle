@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{%load static%}
+{%load crispy_forms_tags %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mingle</title>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="{%static 'css/profile.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="bg">
+
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+   <h1 class="navbar-brand animate__animated animate__tada">m<span id="hc2">i</span>ngle</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="25" height="25"
+    viewBox="0 0 172 172"
+    style=" fill:transparent;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="transparent"></path><g fill="#edbb00"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></g></svg>
+    </span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+  </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item active">
+        <a class="nav-link animate__animated animate__bounceInDown " style="animation-delay: 1s" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link animate__animated animate__bounceInDown " style="animation-delay: 1.2s" href="/">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link animate__animated animate__bounceInDown " style="animation-delay: 1.4s" href="/plans">Our Plans</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link animate__animated animate__bounceInDown " style="animation-delay: 1.6s" href="#">About Us</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link animate__animated animate__bounceInDown " style="animation-delay: 1.8s" href="/logout">logout</a>
+      </li>
+  </div>
+</nav>
+
+    <section class="jumbotron animate__animated animate__fadeIn " style="animation-delay: 0.7s"">
+
+<img class="center rounded-circle account-img" src="{{user.userprofile.image.url}}">
+       <div class="aan">
+  <h1>{{user.first_name}}</h1>
+         <h1>{{user.last_name}}</h1><br><br>
+                  <h2>email : {{user.email}}</h2><br>
+                  <h2>age : {{user.userprofile.age}}</h2><br>
+                  <h2>city : {{user.userprofile.city}}</h2><br>
+                  <h2>state : {{user.userprofile.state}}</h2><br>
+                  <h2>zipcode : {{user.userprofile.zip}}</h2>
+           <h5 class="btn btn-danger"><a class="aa" href="update/">update</a></h5>
+      </div>
+
+
+</div>
+  </body>
+</html>

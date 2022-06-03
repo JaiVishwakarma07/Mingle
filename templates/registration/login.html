@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{%load static%}
+{% load crispy_forms_tags %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>mingle</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+  <link rel="stylesheet" href="{%static 'css/CHUTKI.css'%}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="bg">
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+      <h1 class="navbar-brand animate__animated animate__tada">m<span id="hc2">i</span>ngle</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 172 172"
+            style=" fill:transparent;">
+            <g transform="">
+              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="transparent"></path>
+                <g fill="#edbb00">
+                  <path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link  animate__animated animate__bounceInDown " style="animation-delay: 1.3s"
+              href="/signup">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__bounceInDown" style="animation-delay: 1.5s" href=" ">About
+              US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <section class="jumbotron bg-danger animate__animated animate__fadeIn" style="animation-delay: 1s">
+        <h1>WHY US?</h1><br>
+        <p>
+          <marquee behavior="scroll" direction="up">Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+            McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+            words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+            literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+            Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+            treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
+            ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+            original form, accompanied by English versions from the 1914 translation by H. Rackham.
+          </marquee>
+        </p>
+      </section>
+
+      <section class=" ff col-12 col-sm-4 col-md-4 ">
+        <section class="container-fluid">
+          <section class="col-12 col-sm-6 col-md-3  animate__animated animate__bounceInLeft">
+            <form class="form-container" style="width:350px;" method="POST">
+              <h3 class="hhh">already a user!! see your <span class="hhh2">matches</span> now</h3>
+              <div class="form-group">
+                {{ form|crispy }}
+                {%csrf_token%}
+              </div>
+              <button type="submit" name="button" class="but1"><span>logIn</span></button>
+            </form>
+          </section>
+        </section>
+      </section>
+    </div>
+    <div class="rrr">
+      <h1> Success Stories</h1><br>
+      <a href="testapp/suc1.html" class="animate__animated animate__bounceInLeft " style="animation-delay: 1.5s"><img
+          class="center rounded-circle account-img"
+          src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="suc2.html" class="animate__animated animate__bounceInLeft " style="animation-delay: 1.7s"><img
+          class="center rounded-circle account-img"
+          src="https://www.slrlounge.com/wp-content/uploads/2020/01/couples-pose-1.jpg"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="suc3.html" class="animate__animated animate__bounceInLeft " style="animation-delay: 1.9s"> <img
+          class="center rounded-circle account-img"
+          src="https://media.glamour.com/photos/58b4a644fb8809354e93251e/16:9/w_2560%2Cc_limit/couples-lede.jpg"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="suc4.html" class="animate__animated animate__bounceInLeft " style="animation-delay: 2.1s"> <img
+          class="center rounded-circle account-img"
+          src="https://i.pinimg.com/736x/0d/5f/59/0d5f592b37564eb302d3845aae9426c0.jpg"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="suc5.html" class="animate__animated animate__bounceInLeft " style="animation-delay: 2.3s"> <img
+          class="center rounded-circle account-img"
+          src="https://i.pinimg.com/originals/b8/6e/90/b86e908b1af79a4176d87b8063ec0380.jpg"></a>
+      <br><br><br><br>
+      <h1>Contact Us</h1><br>
+      <div class="rrq">
+        <div class="wrapper">
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <span>Github</span>
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jaja">
+      <h7>©  Copyright. This is Official Dating App created by Jai Vishwakarma. Koi bhi nautanki isske sath nai chalegi
+        ye hamne banai h aur hamri website h. koi problem ho tume to apne pass rakho samjhe.</h7>
+      <br><br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

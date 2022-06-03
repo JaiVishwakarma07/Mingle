@@ -1,0 +1,144 @@
+ body,
+ html {
+   height: 100%;
+   margin: 0;
+
+   background-image: url(https://images.unsplash.com/photo-1518931479438-62470470be9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+   background-size: cover;
+   background-position: center;
+ }
+
+ .bg {
+
+   background-image: url(https://images.unsplash.com/photo-1518931479438-62470470be9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+ }
+
+ .jagga {
+   position: absolute;
+   margin-left: 90px;
+   opacity: 80%;
+ }
+
+ .yodo {
+   text-align: center;
+   margin-top: 40px;
+   color: #fff;
+   overflow: auto;
+   text-transform: uppercase;
+ }
+
+ .cards {
+   width: 100%;
+   height: auto;
+ }
+
+ .card {
+   margin: 6%;
+   text-align: center;
+   color: #fff;
+   //background-color : #000;
+   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+   width: 21.25%;
+   border-radius: 32px;
+   box-shadow: 0px 13px 10px 1px rgba(0, 0, 0, 0.1);
+   float: left;
+ }
+
+ .card:hover {
+   box-shadow: 0px 30px 18px --8px rgba(0, 0, 0, 0.1);
+   transform: scale(1.05, 1.05);
+ }
+
+ .card-body {
+   background-color: #000;
+ }
+
+ .card__img {
+
+   border-top-left-radius: 12px;
+   border-bottom-left-radius: 12px;
+ }
+
+ .card__info {
+   background-color: #000;
+   border-bottom-left-radius: 12px;
+   border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+   //background-color: #fff;
+ }
+
+ .card__category {
+
+   text-transform: uppercase;
+   font-size: 13px;
+   letter-spacing: 2px;
+   font-weight: 500;
+
+ }
+
+ .card__title {
+   margin-top: 5px;
+   margin-bottom: 10px;
+   //font-family: sans-serif;
+   background-color: #fff;
+   text-transform: capitalize;
+ }
+
+ .card-img-top {
+   height: 250px;
+ }
+
+
+ //nav
+
+ .navbar {
+   background-color: transparent;
+   border-color: transparent;
+ }
+
+ .navbar-brand {
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 800;
+
+ }
+
+ .nav-item .nav-link {
+   color: #fff;
+   position: relative;
+   margin: 0px 12px;
+ }
+
+ .nav-item .nav-link::after {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 75px;
+   height: 2px;
+   transform: scaleX(0);
+   transition: 0.5s;
+   content: "";
+   transform-origin: left;
+   background-color: #ff1a1a;
+ }
+
+ .nav-item .nav-link:hover:after {
+   transform-origin: right;
+   transform: scaleX(1);
+ }
+
+ #hc2 {
+   color: #ff1a1a;
+ }
+
+ .hhh2 {
+   text-align: center;
+   font-weight: bold;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   color: #ff1a1a;
+
+ }

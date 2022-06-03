@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mingle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="{%static 'css/CHUTKI.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body style="background-image: url('https://images.unsplash.com/photo-1518931479438-62470470be9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');">
+    <div class="bg">
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+   <h1 class="navbar-brand animate__animated animate__tada ">m<span id="hc2">i</span>ngle</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="25" height="25"
+    viewBox="0 0 172 172"
+    style=" fill:transparent;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="transparent"></path><g fill="#edbb00"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></g></svg>
+    </span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+  </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item active">
+        <a class="nav-link animate__animated animate__bounceInDown" style="animation-delay: 1s" href="/accounts/login">Login <span class="sr-only">(current)</span></a>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link animate__animated animate__bounceInDown" style="animation-delay: 1.2s" href="/aboutus">About Us</a>
+      </li>
+  </div>
+</nav>
+<div class="khalibali">
+    <div class="www ">
+<section class="container-fluid ">
+  <section class="row justify-content-center">
+  <section class="col-20 col-sm-10 col-md-5  animate__animated animate__bounceInRight"  style="animation-delay: 0.7s">
+         <form class="form-container" method="POST">
+               <h2 class="hh">join us and <span class="hh2">find</span> your <span class="hh2">partner</span> now</h2>
+             <div class="form-row">
+    <div class="form-group col-md-6">
+        <label>Name : </label>
+             {{form.first_name}}
+           {%csrf_token%}
+    </div>
+                 <div class="form-group col-md-6">
+                     <label>&nbsp </label>
+                     {{form.last_name}}
+                     {%csrf_token%}
+                 </div>
+
+                 <div class="form-group col-md-12">
+                     <label>Email : </label>
+                       {{form.email}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-6">
+                     <label>Username : </label>
+                       {{form.username}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-6">
+                     <label>Password : </label>
+                       {{form.password}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-12">
+                     <label>Phone : </label>
+                       {{profile_form.phone}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-12">
+                     <label>Age : </label>
+                       {{profile_form.age}}
+                       {%csrf_token%}
+                   </div>
+                 <div class="form-group col-md-12">
+                     <label>City : </label>
+                       {{profile_form.city}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-6">
+                     <label>State : </label>
+                       {{profile_form.state}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-6">
+                     <label>Zip Code : </label>
+                       {{profile_form.zip}}
+                       {%csrf_token%}
+                   </div>
+
+             </div>
+           <input type="submit" class="but1" value="Signup">
+         </form>
+      </section>
+</section>
+</section>
+
+       </div>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

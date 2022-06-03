@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+       {%block body_block%}
+<div class="www ">
+<section class="container-fluid ">
+  <section class="row justify-content-center">
+  <section class="col-20 col-sm-10 col-md-5  animate__animated animate__bounceInRight"  style="animation-delay: 0.7s">
+         <form class="form-container" method="POST">
+               <h2 class="hh"><span class="hh2">update</span> your profile</h2>
+             <div class="form-row">
+                     <div class="form-group col-md-12 imgdiv">
+                         <img class="center rounded-circle account-img" src="{{user.userprofile.image.url}}"><br>
+             {{p_form.image}}
+           {%csrf_token%}
+    </div>
+    <div class="form-group col-md-6">
+        <label>Name : </label>
+             {{u_form.first_name}}
+           {%csrf_token%}
+    </div>
+                 <div class="form-group col-md-6">
+                     <label>&nbsp </label>
+                     {{u_form.last_name}}
+                     {%csrf_token%}
+                 </div>
+
+                 <div class="form-group col-md-12">
+                     <label>Email : </label>
+                       {{u_form.email}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-12">
+                     <label>Phone : </label>
+                       {{p_form.phone}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-12">
+                     <label>Age : </label>
+                       {{p_form.age}}
+                       {%csrf_token%}
+                   </div>
+                 <div class="form-group col-md-12">
+                     <label>City : </label>
+                       {{p_form.city}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-6">
+                     <label>State : </label>
+                       {{p_form.state}}
+                       {%csrf_token%}
+                   </div>
+
+                 <div class="form-group col-md-6">
+                     <label>Zip Code : </label>
+                       {{p_form.zip}}
+                       {%csrf_token%}
+                   </div>
+
+             </div>
+           <input type="submit" class="but1" value="update">
+         </form>
+      </section>
+</section>
+</section>
+       </div>
+
+       {%endblock%}
+
+
+
+
+
+

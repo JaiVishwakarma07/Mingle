@@ -1,0 +1,192 @@
+.content {
+  text-align: center;
+  padding-top: 20%
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1518931479438-62470470be9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.navbar-toggler:hover {
+  outline: none;
+}
+
+.aa {
+  color: #fff;
+}
+
+.aa:hover {
+  color: #fff;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+
+}
+
+#hc1 {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+#hc2 {
+  color: #ff1a1a;
+}
+
+
+label {
+  color: #fff;
+}
+
+.but:hover span {
+  padding-right: 25px;
+  outline: none;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  position: relative;
+  margin: 0px 12px;
+}
+
+.nav-item .nav-link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75px;
+  height: 2px;
+  transform: scaleX(0);
+  transition: 0.5s;
+  content: "";
+  transform-origin: left;
+  background-color: #ff1a1a;
+}
+
+.nav-item .nav-link:hover:after {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+
+.but1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  outline: none;
+}
+
+
+.hhh {
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hhh2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #ff1a1a;
+
+}
+
+.ppp {
+  margin-top: 20px;
+  opacity: 75%;
+}
+
+.card-body {
+  background-color: #000;
+}
+
+.hh {
+  padding: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hh2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #ff1a1a;
+
+}
+
+.lll {
+  font-size: 20px;
+}
+
+#inputState1 {
+  margin-left: -15px;
+}
+
+.www {
+  text-align: left;
+}
+
+.jumbotron {
+  background-image: url(https://images.wallpaperscraft.com/image/rose_red_black_130539_1920x1080.jpg);
+  margin: 30px 230px;
+  opacity: 80%;
+  height: 200px;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding-left: 66px;
+  font-family: 'Dancing Script';
+  width: 70%;
+}
+
+.aan {
+  float: right;
+  font-style: "Comic sans MS"
+
+}
+
+.account-img {
+  height: 350px;
+  margin-left: 44px;
+}
+
+.aa {
+  color: #fff;
+}
+
+.aa:hover {
+  color: #fff;
+}
